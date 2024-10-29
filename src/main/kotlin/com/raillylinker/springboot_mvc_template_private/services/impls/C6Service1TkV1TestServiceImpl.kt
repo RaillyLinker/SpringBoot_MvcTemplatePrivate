@@ -1,9 +1,9 @@
 package com.raillylinker.springboot_mvc_template_private.services.impls
 
-import com.raillylinker.springboot_mvc_template_private.use_components.*
+import com.raillylinker.springboot_mvc_template_private.util_components.*
 import com.raillylinker.springboot_mvc_template_private.controllers.C6Service1TkV1TestController
-import com.raillylinker.springboot_mvc_template_private.kafka_consumers.Kafka1MainConsumer
-import com.raillylinker.springboot_mvc_template_private.kafka_producers.Kafka1MainProducer
+import com.raillylinker.springboot_mvc_template_private.kafka_components.consumers.Kafka1MainConsumer
+import com.raillylinker.springboot_mvc_template_private.kafka_components.producers.Kafka1MainProducer
 import com.raillylinker.springboot_mvc_template_private.services.C6Service1TkV1TestService
 import jakarta.servlet.http.HttpServletResponse
 import org.apache.fontbox.ttf.TTFParser

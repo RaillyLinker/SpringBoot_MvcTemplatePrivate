@@ -1,6 +1,6 @@
 package com.raillylinker.springboot_mvc_template_private.services.impls
 
-import com.raillylinker.springboot_mvc_template_private.use_components.ActuatorWhiteList
+import com.raillylinker.springboot_mvc_template_private.util_components.ActuatorWhiteList
 import com.raillylinker.springboot_mvc_template_private.controllers.C1Controller
 import com.raillylinker.springboot_mvc_template_private.data_sources.redis_map_components.redis1_main.Redis1_Map_RuntimeConfigIpList
 import com.raillylinker.springboot_mvc_template_private.services.C1Service

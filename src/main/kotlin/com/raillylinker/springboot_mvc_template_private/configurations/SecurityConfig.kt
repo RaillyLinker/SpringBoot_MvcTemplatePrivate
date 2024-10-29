@@ -25,7 +25,7 @@ import org.springframework.web.cors.CorsConfiguration
 import org.springframework.web.cors.CorsConfigurationSource
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource
 import org.springframework.web.filter.OncePerRequestFilter
-import com.raillylinker.springboot_mvc_template_private.use_components.JwtTokenUtil
+import com.raillylinker.springboot_mvc_template_private.util_components.JwtTokenUtil
 import com.raillylinker.springboot_mvc_template_private.data_sources.redis_map_components.redis1_main.Redis1_Map_Service1ForceExpireAuthorizationSet
 
 

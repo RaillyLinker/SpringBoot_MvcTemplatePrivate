@@ -1,7 +1,7 @@
 package com.raillylinker.springboot_mvc_template_private.controllers
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.raillylinker.springboot_mvc_template_private.use_components.ImageProcessUtil
+import com.raillylinker.springboot_mvc_template_private.util_components.ImageProcessUtil
 import com.raillylinker.springboot_mvc_template_private.services.C5Service1TkV1MediaResourceProcessService
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.Parameter

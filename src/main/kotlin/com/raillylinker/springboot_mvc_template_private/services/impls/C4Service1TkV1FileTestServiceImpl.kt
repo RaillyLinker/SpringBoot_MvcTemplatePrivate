@@ -1,7 +1,7 @@
 package com.raillylinker.springboot_mvc_template_private.services.impls
 
-import com.raillylinker.springboot_mvc_template_private.use_components.AwsS3UtilComponent
-import com.raillylinker.springboot_mvc_template_private.use_components.CustomUtil
+import com.raillylinker.springboot_mvc_template_private.util_components.AwsS3UtilComponent
+import com.raillylinker.springboot_mvc_template_private.util_components.CustomUtil
 import com.raillylinker.springboot_mvc_template_private.controllers.C4Service1TkV1FileTestController
 import com.raillylinker.springboot_mvc_template_private.services.C4Service1TkV1FileTestService
 import jakarta.servlet.http.HttpServletResponse
