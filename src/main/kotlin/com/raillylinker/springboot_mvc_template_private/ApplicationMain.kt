@@ -19,7 +19,7 @@ import java.util.*
 	// Bean 스캔할 모듈 패키지 리스트
 	basePackages =
 	[
-		"com.raillylinker.springboot_mvc_template_private"
+		ProjectConst.PACKAGE_NAME
 	]
 )
 @SpringBootApplication(

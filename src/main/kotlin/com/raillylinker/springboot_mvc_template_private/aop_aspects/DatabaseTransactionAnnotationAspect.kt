@@ -27,7 +27,7 @@ class DatabaseTransactionAnnotationAspect(
     // ---------------------------------------------------------------------------------------------
     // <AOP 작성 공간>
     // (@CustomTransactional 를 입력한 함수 실행 전후에 JPA 트랜젝션 적용)
-    @Around(com.raillylinker.springboot_mvc_template_private.aop_aspects.DatabaseTransactionAnnotationAspect.Companion.TRANSACTION_ANNOTATION_PATH)
+    @Around(TRANSACTION_ANNOTATION_PATH)
     fun aroundTransactionAnnotationFunction(joinPoint: ProceedingJoinPoint): Any? {
         val proceed: Any?
 

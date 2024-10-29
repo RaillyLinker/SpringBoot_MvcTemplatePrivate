@@ -22,9 +22,7 @@ import javax.sql.DataSource
     entityManagerFactoryRef = "${Db1MainConfig.DATABASE_DIRECTORY_NAME}_LocalContainerEntityManagerFactoryBean", // 아래 bean 이름과 동일
     transactionManagerRef = Db1MainConfig.TRANSACTION_NAME // 아래 bean 이름과 동일
 )
-class Db1MainConfig(
-    private val environment: Environment
-) {
+class Db1MainConfig {
     companion object {
         // !!!application.yml 의 datasource 안에 작성된 이름 할당하기!!!
         const val DATABASE_CONFIG_NAME: String = "db1-main"
