@@ -3,7 +3,6 @@ package com.raillylinker.springboot_mvc_template_private.services.impls
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.raillylinker.springboot_mvc_template_private.classes.SseEmitterWrapper
-import com.raillylinker.springboot_mvc_template_private.util_components.JwtTokenUtil
 import com.raillylinker.springboot_mvc_template_private.controllers.C2Service1TkV1RequestTestController
 import com.raillylinker.springboot_mvc_template_private.services.C2Service1TkV1RequestTestService
 import jakarta.servlet.http.HttpServletResponse
@@ -33,9 +32,7 @@ import java.util.concurrent.Executors
 @Service
 class C2Service1TkV1RequestTestServiceImpl(
     // (프로젝트 실행시 사용 설정한 프로필명 (ex : dev8080, prod80, local8080, 설정 안하면 default 반환))
-    @Value("\${spring.profiles.active:default}") private var activeProfile: String,
-
-    private val jwtTokenUtil: JwtTokenUtil
+    @Value("\${spring.profiles.active:default}") private var activeProfile: String
 ) : C2Service1TkV1RequestTestService {
     // <멤버 변수 공간>
     private val classLogger: Logger = LoggerFactory.getLogger(this::class.java)
