@@ -169,16 +169,4 @@ interface C2Service1TkV1RequestTestService {
         stringList: List<String>,
         inputVo: C2Service1TkV1RequestTestController.Api22EmptyListRequestTestInputVo
     ): C2Service1TkV1RequestTestController.Api22EmptyListRequestTestOutputVo?
-
-
-    ////
-    fun api23LoggedInAccessTest(httpServletResponse: HttpServletResponse, authorization: String): String?
-
-
-    ////
-    fun api24AdminAccessTest(httpServletResponse: HttpServletResponse, authorization: String): String?
-
-
-    ////
-    fun api25DeveloperAccessTest(httpServletResponse: HttpServletResponse, authorization: String): String?
 }

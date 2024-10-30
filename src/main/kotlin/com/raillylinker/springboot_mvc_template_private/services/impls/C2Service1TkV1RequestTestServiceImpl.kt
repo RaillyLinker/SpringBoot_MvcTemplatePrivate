@@ -4,8 +4,6 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.raillylinker.springboot_mvc_template_private.classes.SseEmitterWrapper
 import com.raillylinker.springboot_mvc_template_private.util_components.JwtTokenUtil
-import com.raillylinker.springboot_mvc_template_private.configurations.SecurityConfig.AuthTokenFilterService1Tk.Companion.AUTH_JWT_CLAIMS_AES256_ENCRYPTION_KEY
-import com.raillylinker.springboot_mvc_template_private.configurations.SecurityConfig.AuthTokenFilterService1Tk.Companion.AUTH_JWT_CLAIMS_AES256_INITIALIZATION_VECTOR
 import com.raillylinker.springboot_mvc_template_private.controllers.C2Service1TkV1RequestTestController
 import com.raillylinker.springboot_mvc_template_private.services.C2Service1TkV1RequestTestService
 import jakarta.servlet.http.HttpServletResponse
@@ -731,42 +729,5 @@ class C2Service1TkV1RequestTestServiceImpl(
             stringList,
             inputVo.requestBodyStringList
         )
-    }
-
-
-    ////
-    override fun api23LoggedInAccessTest(httpServletResponse: HttpServletResponse, authorization: String): String? {
-        val memberUid = jwtTokenUtil.getMemberUid(
-            authorization.split(" ")[1].trim(),
-            AUTH_JWT_CLAIMS_AES256_INITIALIZATION_VECTOR,
-            AUTH_JWT_CLAIMS_AES256_ENCRYPTION_KEY
-        )
-
-        httpServletResponse.status = HttpStatus.OK.value()
-        return "Member No.$memberUid : Test Success"
-    }
-
-    ////
-    override fun api24AdminAccessTest(httpServletResponse: HttpServletResponse, authorization: String): String? {
-        val memberUid = jwtTokenUtil.getMemberUid(
-            authorization.split(" ")[1].trim(),
-            AUTH_JWT_CLAIMS_AES256_INITIALIZATION_VECTOR,
-            AUTH_JWT_CLAIMS_AES256_ENCRYPTION_KEY
-        )
-
-        httpServletResponse.status = HttpStatus.OK.value()
-        return "Member No.$memberUid : Test Success"
-    }
-
-    ////
-    override fun api25DeveloperAccessTest(httpServletResponse: HttpServletResponse, authorization: String): String? {
-        val memberUid = jwtTokenUtil.getMemberUid(
-            authorization.split(" ")[1].trim(),
-            AUTH_JWT_CLAIMS_AES256_INITIALIZATION_VECTOR,
-            AUTH_JWT_CLAIMS_AES256_ENCRYPTION_KEY
-        )
-
-        httpServletResponse.status = HttpStatus.OK.value()
-        return "Member No.$memberUid : Test Success"
     }
 }
