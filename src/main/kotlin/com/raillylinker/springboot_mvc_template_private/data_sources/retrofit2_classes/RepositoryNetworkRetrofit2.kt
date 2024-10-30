@@ -1,6 +1,6 @@
 package com.raillylinker.springboot_mvc_template_private.data_sources.retrofit2_classes
 
-import com.google.gson.GsonBuilder
+import com.google.gson.Gson
 import com.raillylinker.springboot_mvc_template_private.data_sources.retrofit2_classes.request_apis.*
 import okhttp3.HttpUrl
 import okhttp3.Interceptor
@@ -178,9 +178,7 @@ class RepositoryNetworkRetrofit2 private constructor() {
         // 위 설정에 따른 retrofit 객체 생성 및 반환
         return Retrofit.Builder().baseUrl(baseUrl)
             .addConverterFactory(ScalarsConverterFactory.create())
-            .addConverterFactory(GsonConverterFactory.create(GsonBuilder().setLenient().serializeNulls().create()))
+            .addConverterFactory(GsonConverterFactory.create(Gson()))
             .client(okHttpClientBuilder.build()).build()
     }
-
-
 }
